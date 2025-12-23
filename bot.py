@@ -104,8 +104,7 @@ def job_check(driver, index):
                 "price": price,
             })
 
-            if jobs_to_update:
-                update_google_sheet(jobs_to_update)
+            update_google_sheet(jobs_to_update)
 
     # Save seen jobs
     save_seen(seen)
