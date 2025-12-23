@@ -9,13 +9,17 @@ from update_sheet import update_google_sheet
 TARGET_URLS_Lancers = {
     "Lancers_web":    "https://www.lancers.jp/work/search/web?open=1",
     "Lancers_system": "https://www.lancers.jp/work/search/system?open=1",
+    "Lancers_AI":     "https://www.lancers.jp/work/search/system/ai?open=1",
+    "Lancers_Android": "https://www.lancers.jp/work/search/system/smartphoneapp?open=1",
+    "Lancers_EC":    "https://www.lancers.jp/work/search/web/ec?open=1"
 }
 
 TARGET_URLS_CW = {
     "CW_web": "https://crowdworks.jp/public/jobs/search?category_id=230&order=new",
     "CW_system": "https://crowdworks.jp/public/jobs/search?category_id=226&order=new",
     "CW_AI": "https://crowdworks.jp/public/jobs/search?category_id=311&order=new",
-    "CW_Android": "https://crowdworks.jp/public/jobs/search?category_id=242&order=new"
+    "CW_Android": "https://crowdworks.jp/public/jobs/search?category_id=242&order=new",
+    "CW_EC": "https://crowdworks.jp/public/jobs/search?category_id=235&order=new"
 }
 
 if not os.path.exists('seen.json'):
