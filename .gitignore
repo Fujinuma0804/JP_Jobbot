@@ -1,0 +1,10 @@
+build/
+dist/
+/__pycache__/
+seen.json
+service_account.json
+.env
+*.log
+*.pyc
+bot.exe
+env
