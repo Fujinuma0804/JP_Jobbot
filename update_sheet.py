@@ -26,9 +26,11 @@ def update_google_sheet(data):
             return
 
         # Use modern gspread service_account method (simpler and recommended)
+        print("🔄 Authenticating with Google Sheets...")
         client = gspread.service_account(filename=credentials_file)
 
         # Open the Google Sheet
+        print("🔄 Opening Google Sheet...")
         sheet = client.open_by_url(GOOGLE_SHEET_URL).sheet1
 
         # Prepare the data to append
@@ -45,6 +47,7 @@ def update_google_sheet(data):
 
         # Append rows to the sheet
         if rows:
+            print("🔄 Appending rows to Google Sheet...")
             sheet.append_rows(rows, value_input_option="USER_ENTERED")
             print("✅ Data successfully sent to Google Sheets.")
         else:
